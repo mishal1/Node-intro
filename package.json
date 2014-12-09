@@ -18,7 +18,9 @@
   "homepage": "https://github.com/mishal1/Node-intro",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
     "grunt-jasmine-node": "^0.2.1",
-    "jasmine-node": "^1.14.5"
+    "jasmine-node": "^1.14.5",
+    "jshint": "^2.5.10"
   }
 }

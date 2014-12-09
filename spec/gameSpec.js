@@ -1,3 +1,5 @@
+'use strict';
+
 var Game = require('../src/game');
 
 describe('Gutter game', function(){
@@ -10,4 +12,13 @@ describe('Gutter game', function(){
     }
     expect(game.score).toEqual(0);
   });
+
+  it('Scores 10 on a normal-ish game', function(){
+    for(var i = 0; i < 19; i++){
+      game.roll(0);
+    }
+    game.roll(10);
+    expect(game.score).toEqual(10);
+  });
+
 });
